@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Rolagem Estilizada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 200vh; /* Apenas para demonstrar a rolagem */
+            background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+        }
+
+        /* Estilizando a barra de rolagem para navegadores baseados em WebKit (Chrome, Edge, Safari) */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1E90FF;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #104E8B;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Barra de Rolagem Estilizada</h1>
+    <p>Role para ver o efeito na barra de rolagem.</p>
+</body>
+</html>
