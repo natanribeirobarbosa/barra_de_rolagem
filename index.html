@@ -15,24 +15,23 @@
             align-items: center;
             justify-content: center;
             background: linear-gradient(45deg, black, transparent);
-            background-size: 400% 400%;
+            background-size: 300% 300%;
             animation: gradientShift 5s infinite linear;
         }
 
         @keyframes gradientShift {
        0% {
-    background-position: 0%;
-}
-
-50% {
-    background-position: 100%;
-}
-            75%{
-                background-position: 200%;
-            }
-100% {
-    background-position: 0%;
-        }
+        background-position: 0% 50%;
+    }
+    33% {
+        background-position: 100% 50%;
+    }
+    66% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 
         /* Estilizando a barra de rolagem para navegadores baseados em WebKit (Chrome, Edge, Safari) */
         ::-webkit-scrollbar {
