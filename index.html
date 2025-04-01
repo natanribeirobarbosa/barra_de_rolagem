@@ -20,8 +20,21 @@
         }
 
         @keyframes gradientShift {
-     0% { filter: hue-rotate(0deg); }
-    100% { filter: hue-rotate(360deg); }
+         0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }}
 
         /* Estilizando a barra de rolagem para navegadores baseados em WebKit (Chrome, Edge, Safari) */
         ::-webkit-scrollbar {
